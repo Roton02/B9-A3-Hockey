@@ -6,6 +6,7 @@
     <title>B9-A2-Hockey's</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/2596ecf14d.js" crossorigin="anonymous"></script>
     <!-- Google-font-section -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +18,7 @@
             extend: {
               colors: {
                 'custom-primary': '#13131863',
+                'custom-primary-2': '#FF4240',
               }
             }
           }
@@ -32,13 +34,150 @@
 </head>
 <!-- Ending-Head -->
 <body class="manrope">
-    <header>
-        
+    <header class="container mx-auto px-10 my-12">
+        <!-- Navber start -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <h1 class="text-4xl font-extrabold ">Hockey<span class="text-custom-primary-2">’</span>s</h1>
+                </div>
+                <div class="navbar-center hidden lg:flex gap-7">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="text-custom-primary-2"><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>                 
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <h2 class="mr-6 text-custom-primary hidden lg:flex"><i class="fa-solid fa-magnifying-glass"></i></h2>
+                  <a class="btn text-white bg-custom-primary-2 lg:px-5 lg:text-xl font-semibold hover:bg-black">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+        <!-- End My bav bar -->
+
+        <!-- Slider-section-start -->
+        <section class="my-12">
+            <div>
+                <div class="carousel w-full">
+                  <!-- slider-1 -->
+                  <div id="slide1" class="carousel-item relative w-full h-[700px] bg-cover bg-center rounded-2xl"
+                  style="background-image:url('images/1.png');">
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide3" class="btn btn-circle bg-black text-white text-xl hover:bg-custom-primary-2">❮</a> 
+                      <a href="#slide2" class="btn btn-circle bg-black text-white text-xl hover:bg-custom-primary-2">❯</a>
+                    </div>
+                  </div> 
+                  <!-- slider-2 -->
+                  <div id="slide2" class="carousel-item relative w-full h-[700px] bg-cover bg-center rounded-2xl"
+                  style="background-image:url('images/1.png');">
+                   
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+  
+                      <a href="#slide1" class="btn btn-circle bg-black text-white text-xl hover:bg-custom-primary-2">❮</a> 
+                      <a href="#slide3" class="btn btn-circle bg-black text-white text-xl hover:bg-custom-primary-2">❯</a>
+                    </div>
+                  </div> 
+                  <!-- slider-3 -->
+                  <div id="slide3" class="carousel-item relative w-full h-[700px] bg-cover bg-center rounded-2xl"
+                  style="background-image:url('images/1.png');">
+                    
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide2" class="btn btn-circle bg-black text-white text-xl hover:bg-custom-primary-2">❮</a> 
+                      <a href="#slide1" class="btn btn-circle bg-black text-white text-xl hover:bg-custom-primary-2">❯</a>
+                    </div>
+                  </div> 
+                  
+                </div>
+              </div>
+        </section>
 
     </header>
     <!-- End header -->
-    <main>
+    <main class="container mx-auto px-10 my-12">
+        <!-- Hockey club section -->
+        <section>
+            <div class="flex flex-col justify-center items-center space-y-4">
+                <h1 class=" text-2xl lg:text-4xl text-center font-extrabold">Professional Hockeys Club</h1>
+                <p class="text-custom-primary text-center lg:w-2/3">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+    
+            </div>
+            <!-- card -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <!-- card-1 -->
+                <div class="card  bg-base-100  relative">
+                    <figure class="px-10 pt-10">
+                        <div>
+                            <span class="loading loading-spinner text-primary w-20 h-20"></span>
+                            <h2 class="text-xl font-extrabold absolute translate-x-6 -translate-y-14">87%</h2>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center space-y-2">
+                      <h2 class="card-title ">Prayer Facility</h2>
+                      <p class="  font-medium">Amet consectetur. Condimentum <br>dignissim adipiscing .</p>
+                      
+                    </div>
+                  </div>
+                  <!-- card-2 -->
+                <div class="card  bg-base-100  relative">
+                    <figure class="px-10 pt-10">
+                        <div>
+                            <span class="loading loading-spinner text-secondary w-20 h-20"></span>
+                            <h2 class="text-xl font-extrabold absolute translate-x-6 -translate-y-14">95%</h2>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center space-y-2">
+                      <h2 class="card-title ">Prayer Facility</h2>
+                      <p class=" w-0.5/2 font-medium">Amet consectetur. Condimentum <br>dignissim adipiscing .</p>
+                      
+                    </div>
+                  </div>
+                  <!-- card-3 -->
+                <div class="card  bg-base-100  relative">
+                    <figure class="px-10 pt-10">
+                        <div>
+                            <span class="loading loading-spinner text-accent w-20 h-20"></span>
+                            <h2 class="text-xl font-extrabold absolute translate-x-6 -translate-y-14">90%</h2>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center space-y-2">
+                      <h2 class="card-title ">Prayer Facility</h2>
+                      <p class=" w-0.5/2 font-medium">Amet consectetur. Condimentum <br>dignissim adipiscing .</p>
+                      
+                    </div>
+                  </div>
+                  <!-- card-4 -->
+                <div class="card  bg-base-100  relative">
+                    <figure class="px-10 pt-10">
+                        <div>
+                            <span class="loading loading-spinner text-succes w-20 h-20"></span>
+                            <h2 class="text-xl font-extrabold absolute translate-x-6 -translate-y-14">80%</h2>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center space-y-2">
+                      <h2 class="card-title ">Prayer Facility</h2>
+                      <p class=" w-0.5/2 font-medium">Amet consectetur. Condimentum <br>dignissim adipiscing .</p>
+                      
+                    </div>
+                  </div>
 
+            </div>
+        </section>
     </main>
     <!-- End main- -->
     <footer>
