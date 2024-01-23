@@ -468,17 +468,19 @@
     </main>
     <!-- End main- -->
     <!-- Footer-section -->
-    <footer class="footer p-10 bg-black mx-auto  text-base-content">
-      <nav>
-        <header class=" text-3xl text-white font-extrabold">Get In Touch</header> 
+    <footer class="footer p-10 bg-black mx-auto  text-base-content flex flex-col lg:flex-row justify-center items-center lg:justify-around">
+      <nav class="text-center lg:text-start">
+        <header class=" text-3xl text-white font-extrabold ml-7 lg:ml-0 mb-3">Get In Touch</header> 
         <div class="text-gray-100 space-y-2">
           <p>Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. <br>Purus urna in sit nullam proin. </p>
         <p> <i class="fa-regular fa-envelope mr-2 text-red-500"></i>hockeys@support.com</p>
         <p> <i class="fa-solid fa-phone mr-2 text-red-500"></i>(+62) 123-321-543</p>
         </div>
       </nav> 
+      <!-- flex-start  -->
+     <div class="flex gap-x-2 lg:gap-x-40 text-center lg:text-start ">
       <nav>
-        <header class=" font-bold text-xl text-white">Company</header> 
+        <header class=" font-bold text-xl text-white mb-3">Company</header> 
         <div class="text-gray-100">
           <ul class="space-y-2">
             <li><a class="link link-hover">About us</a></li>
@@ -489,9 +491,9 @@
           </ul>
         </div>
       </nav> 
-      <nav >
-        <header class="font-bold text-xl text-white">Support</header> 
-        <div class="text-gray-100">
+      <nav>
+        <header class="font-bold text-xl text-white mb-3">Support</header> 
+        <div class="text-gray-100 ">
           <ul class="space-y-2">
             <li><a class="link link-hover">Help Center</a></li>
             <li> <a class="link link-hover">FAQ</a></li>
@@ -501,8 +503,10 @@
           </ul>
         </div>
       </nav> 
-      <nav>
-        <header class="font-bold text-xl text-white">Services</header> 
+     </div>
+      <!-- flex -->
+      <nav class="text-center lg:text-start">
+        <header class="font-bold text-xl text-white ml-5 lg:ml-0 mb-3">Services</header> 
        <div class="text-gray-100" >
         <ul class="space-y-2">
           <li><a class="link link-hover">Academy</a></li>
